@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Product Sans Regular';
+  src: url('/font/Product Sans Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Product Sans Bold';
+  src: url('/font/Product Sans Bold.ttf') format('truetype');
+}
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background: #111015;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background: #111015;
+  }
+}
+
+body {
+  font-family: 'Product Sans Regular';
+  color: rgb(var(--foreground-rgb));
+  background: var(--background);
+  overflow-x: hidden;
+}
+
+::selection{
+  background-color: white;
+  color: black;
+}
+
+.bg-animation:after {
+  content: "";
+  --angle: 0deg;
+  border-radius: 0.6rem;
+  @apply absolute inset-0 z-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false
+}
+
+@keyframes rotate-animation {
+  to {
+      --angle: 360deg
+  }
+}
+
+@supports (background: paint(houdini)) {
+  .bg-animation:after {
+      animation: rotate-animation 10s linear infinite;
+      background: linear-gradient(var(--angle),#03284b, #085CA8,#03284b,#085CA8);
+  }
+}
