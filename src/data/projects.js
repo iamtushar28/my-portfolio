@@ -1,5 +1,15 @@
 export const projects = [
   {
+    title: "Next.js blog platform",
+    src: `/dev.png`,
+    description:
+      "A sleek, responsive blog platform built with Next.js, inspired by Dev.to. Enjoy a pixel-perfect UI, smooth performance, and seamless social logins. Currently evolving into a full-stack app with backend integration and content management. Fast, mobile-friendly, and built to scale!🚀.",
+    date: "feb 2025",
+    alt: "dev blog",
+    preview: "https://dev-iota-one.vercel.app/",
+    github: "https://github.com/iamtushar28/dev",
+  },
+  {
     title: "NextGig",
     src: `/nextgig.png`,
     description:
