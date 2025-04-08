@@ -18,9 +18,9 @@ export default function Desktop() {
                         loading='lazy'
                         src={project.src}
                         alt={project.alt}
-                        width={100}
+                        width={120}
                         height={200}
-                        className='h-[18rem] w-[32rem] rounded-3xl' />
+                        className='h-[18rem] w-[32rem] rounded-xl' />
 
                     <div className='p-4 flex flex-col gap-4'>
                         {/* project discreption */}

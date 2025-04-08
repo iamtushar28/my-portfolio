@@ -10,16 +10,6 @@ export const projects = [
     github: "https://github.com/iamtushar28/dev",
   },
   {
-    title: "NextGig",
-    src: `/nextgig.png`,
-    description:
-      "A modern job search platform transformed from Figma designs into a fully functional website. Integrated with advanced job APIs to deliver a seamless and dynamic user experience. Empowering users to discover their next career move effortlessly.",
-    date: "jan 2025",
-    alt: "nextgig",
-    preview: "https://nextgig30.vercel.app/",
-    github: "https://github.com/iamtushar28/NextGig",
-  },
-  {
     title: "SkySense",
     src: `/skysense.png`,
     description:

@@ -2,6 +2,11 @@ export const services = [{
   id: 1,
   title: 'Frontend Development',
   tools: [{
+    id: 12,
+    name: 'JavaScript',
+    icon: `/javascript.svg`
+  },
+  {
     id: 10,
     name: 'React.js',
     icon: `/react.svg`
@@ -11,11 +16,7 @@ export const services = [{
     name: 'Next.js',
     icon: `/next.svg`
   },
-  {
-    id: 12,
-    name: 'JavaScript',
-    icon: `/javascript.svg`
-  }]
+  ]
 },
 {
   id: 2,
