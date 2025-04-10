@@ -26,16 +26,24 @@ export default function Desktop() {
                         {/* project discreption */}
                         <div className='flex flex-col gap-4'>
 
-                            <h2 className='text-4xl'>
-                                {project.title}
-                            </h2>
+                            <div className='flex items-center justify-between'>
+                                <h2 className='text-4xl'>
+                                    {project.title}
+                                </h2>
+
+                                <h4 className={`text-sm capitalize text-green-500 
+                                    ${project.status === "🧑‍💻 In Progress" ? 'animate-pulse' : ''}`}>
+                                    {project.status}
+                                </h4>
+
+                            </div>
 
                             <div>
                                 <p>
                                     {project.description}
                                 </p>
                                 <p className='capitalize text-zinc-500 cursor-pointer hover:text-white transition-all duration-300'>
-                                Built and deployed in - {project.date}
+                                    Built and deployed in - {project.date}
                                 </p>
                             </div>
                         </div>

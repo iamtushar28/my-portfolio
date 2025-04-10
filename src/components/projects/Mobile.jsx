@@ -79,9 +79,14 @@ export default function Mobile() {
                 onLoad={() => setShowLoader(false)}
               />
               <p className='text-sm tracking-[0.42px]'>{project.description}</p>
-              <p className='capitalize text-zinc-500 cursor-pointer hover:text-white transition-all duration-300 text-sm'>
-              Built and deployed in - {project.date}
-              </p>
+              <div className='flex justify-between items-center'>
+                <p className='capitalize text-sm text-zinc-500 cursor-pointer hover:text-white transition-all duration-300'>
+                  Launched In - {project.date}
+                </p>
+                <h4 className={`text-sm capitalize text-green-500 ${project.status === "🧑‍💻 In Progress" ? 'animate-pulse' : '' }`}>
+                  {project.status}
+                </h4>
+              </div>
             </div>
           </div>
         </div>
