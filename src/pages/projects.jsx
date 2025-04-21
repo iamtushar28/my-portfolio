@@ -21,9 +21,8 @@ const Projects = () => {
   return ( 
     <section className="pt-32 px-5 sm:px-10">
       <div className="flex flex-col max-w-7xl mx-auto">
-        <div className="text-white text-lg font-bold tracking-[0.54px] mb-4">
-          Project Showcase
-        </div>
+        {/* title */}
+        <h2 className='text-3xl md:text-6xl md:mb-4 mb-2'>Turning ideas into <br /> <span className='capitalize text-[#f33f3f] font-semibold'>products</span> that matter.</h2>
         {isMobile ? <Mobile /> : <Desktop />}
       </div>
     </section>

@@ -54,7 +54,8 @@ export default function Mobile() {
                   width={30}
                   height={30}
                   alt='toggle icon'
-                  className='cursor-pointer transition-all ease-in hover:bg-white rounded-full'
+                  className={`${showProject === index ? '' : 'rotate-180'
+                    } cursor-pointer transition-all ease-in hover:bg-white rounded-full`}
                   onClick={() => handleMouseClick(index)}
                 />
               </div>
@@ -79,11 +80,11 @@ export default function Mobile() {
                 onLoad={() => setShowLoader(false)}
               />
               <p className='text-sm tracking-[0.42px]'>{project.description}</p>
-              <div className='flex justify-between items-center'>
-                <p className='capitalize text-sm text-zinc-500 cursor-pointer hover:text-white transition-all duration-300'>
+              <div className='flex mt-3 justify-between items-center'>
+                <p className='capitalize text-sm text-zinc-300 cursor-pointer hover:text-white transition-all duration-300'>
                   Launched In - {project.date}
                 </p>
-                <h4 className={`text-sm capitalize text-green-500 ${project.status === "🧑‍💻 In Progress" ? 'animate-pulse' : '' }`}>
+                <h4 className={`text-sm capitalize text-green-500 ${project.status === "🚀 New" ? 'animate-pulse' : 'hidden'}`}>
                   {project.status}
                 </h4>
               </div>

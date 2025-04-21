@@ -32,7 +32,7 @@ export default function Desktop() {
                                 </h2>
 
                                 <h4 className={`text-sm capitalize text-green-500 
-                                    ${project.status === "🧑‍💻 In Progress" ? 'animate-pulse' : ''}`}>
+                                    ${project.status === "🚀 New" ? 'animate-pulse' : 'hidden'}`}>
                                     {project.status}
                                 </h4>
 
@@ -42,7 +42,7 @@ export default function Desktop() {
                                 <p>
                                     {project.description}
                                 </p>
-                                <p className='capitalize text-zinc-500 cursor-pointer hover:text-white transition-all duration-300'>
+                                <p className='capitalize text-zinc-500 cursor-pointer hover:text-white transition-all duration-300 mt-2'>
                                     Built and deployed in - {project.date}
                                 </p>
                             </div>
