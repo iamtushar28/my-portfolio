@@ -7,8 +7,8 @@ export const projects = [
     date: "april 2025",
     status: "🚀 New",
     alt: "dev blog",
-    preview: "/projects",
-    github: "/projects",
+    preview: "https://travelo28.vercel.app/",
+    github: "https://github.com/iamtushar28/travelo",
   },
   {
     title: "Next.js blog platform",
