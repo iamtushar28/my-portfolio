@@ -9,11 +9,11 @@ import { LuCalendar } from "react-icons/lu"; //calender icon
 export default function Desktop() {
 
     return (
-        <section className='flex flex-wrap justify-between gap-6 mt-6'>
+        <section className='flex flex-wrap justify-between gap-4 lg:gap-6 mt-6'>
 
             {projects.map((project, index) => (
 
-                <div key={index} className='w-[23rem] h-fit pb-4 bg-zinc-800 rounded-2xl overflow-hidden'>
+                <div key={index} className='w-[22rem] lg:w-[23rem] h-fit pb-4 bg-zinc-800 rounded-2xl overflow-hidden'>
 
                     {/* project image */}
                     <CustomImage
