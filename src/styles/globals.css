@@ -11,6 +11,17 @@
   src: url('/font/Product Sans Bold.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: "myfont";
+  src: url("../../public/myfont/myfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.my-font{
+  font-family: 'myfont', sans-serif;
+}
+
 :root {
   --foreground-rgb: 255, 255, 255;
   --background: #111015;

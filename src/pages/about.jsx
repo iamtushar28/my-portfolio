@@ -12,7 +12,7 @@ const About = () => {
         </div>
 
         <div className='animate-fade animate-duration-[2000ms] animate-ease-in'>
-          <h3 className='text-[#f33f3f] mb-[14px] font-semibold'>Who am I?</h3>
+          <h3 className='text-[#24cfa7e4] mb-[14px] font-semibold'>Who am I?</h3>
           <h3 className='mb-2 text-[28px] font-bold tracking-[0.84px]'>
             I’m Tushar Suryawanshi, a Frontend Developer
           </h3>
@@ -45,7 +45,7 @@ const About = () => {
             <Link
               href='/tushar.pdf'  // Point to the PDF file in the public folder
               target='_blank'
-              className='px-6 py-[17px] flex border border-[#f33f3f] rounded-lg hover:bg-[#f33f3f] transition-all ease-in w-max'
+              className='px-6 py-[17px] flex border border-[#24cfa7e4] rounded-lg hover:bg-[#24cfa7e4] transition-all ease-in w-max'
             >
               <CustomImage
                 width={20}

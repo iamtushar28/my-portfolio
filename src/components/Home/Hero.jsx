@@ -47,8 +47,8 @@ const Hero = () => {
         </div>
         <h1 className='mb-[7px] animate-fade-up animate-duration-[1500ms] animate-ease-out text-base'>Hi, my name is Tushar Suryawanshi</h1>
         <h2 className='text-2xl md:text-3xl xl:text-5xl font-bold tracking-[1.44px] text-center xl:leading-snug mb-[25px] md:mb-[53px] animate-fade-up animate-duration-[1500ms] animate-delay-[400ms] animate-ease-out'>
-          I craft <span className='text-[#f33f3f]'>exceptional</span> web experiences through
-          modern frontend <span className='text-[#f33f3f]'>development</span>.
+          I craft <span className='text-[#24cfa7e4]'>exceptional</span> web experiences through
+          modern frontend <span className='text-[#24cfa7e4]'>development</span>.
         </h2>
         <div className='px-4 md:px-5 py-[10px] md:py-3 bg-accent bg-opacity-20 flex gap-6 items-center rounded-lg animate-fade-up animate-duration-[1500ms] animate-delay-[800ms] animate-ease-out'>
           <p>Check out my projects</p>

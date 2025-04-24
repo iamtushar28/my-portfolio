@@ -1,99 +1,78 @@
-import { projects } from '@/data/projects';
-import CustomImage from '@/components/shared/CustomImage';
 import Link from 'next/link';
 import React from 'react';
+import { projects } from '@/data/projects';
+import CustomImage from '@/components/shared/CustomImage';
+import { BsGithub } from "react-icons/bs"; //github icon
+import { HiOutlineExternalLink } from "react-icons/hi"; //link icon
+import { LuCalendar } from "react-icons/lu"; //calender icon
 
 export default function Desktop() {
 
     return (
-        <section className='flex flex-col gap-8'>
+        <section className='flex flex-wrap justify-between gap-6 mt-6'>
+
             {projects.map((project, index) => (
 
-                <div
-                    key={index}
-                    className='w-full h-[20rem] px-4 flex justify-between items-center bg-[#1B1B1D] rounded-3xl'>
+                <div key={index} className='w-[23rem] h-fit pb-4 bg-zinc-800 rounded-2xl overflow-hidden'>
 
-                    {/* Project Image */}
+                    {/* project image */}
                     <CustomImage
                         loading='lazy'
                         src={project.src}
+                        width={368}
+                        height={224}
                         alt={project.alt}
-                        width={120}
-                        height={200}
-                        className='h-[18rem] w-[32rem] rounded-xl' />
+                        className={`object-cover object-center`}
+                    />
 
-                    <div className='p-4 flex flex-col gap-4'>
-                        {/* project discreption */}
-                        <div className='flex flex-col gap-4'>
+                    {/* project title */}
+                    <h2 className='text-4xl px-4 pt-4'>{project.title}</h2>
 
-                            <div className='flex items-center justify-between'>
-                                <h2 className='text-4xl'>
-                                    {project.title}
-                                </h2>
+                    <div className='flex justify-between items-center'>
 
-                                <h4 className={`text-sm capitalize text-green-500 
-                                    ${project.status === "🚀 New" ? 'animate-pulse' : 'hidden'}`}>
-                                    {project.status}
-                                </h4>
-
-                            </div>
-
-                            <div>
-                                <p>
-                                    {project.description}
-                                </p>
-                                <p className='capitalize text-zinc-500 cursor-pointer hover:text-white transition-all duration-300 mt-2'>
-                                    Built and deployed in - {project.date}
-                                </p>
-                            </div>
+                    {/* published date */}
+                        <div className='px-4 flex items-center gap-2 mt-2 text-zinc-200'>
+                            <LuCalendar />
+                            <h4 className='capitalize'>{project.date}</h4>
                         </div>
 
-                        {/* project links */}
-                        <div>
-                            <h4 className='mb-2'>Project Links :
-                            </h4>
-                            <div className='flex gap-4 items-center'>
-
-                                {/* github */}
-                                {project?.github && (
-                                    <Link
-                                        href={project.github}
-                                        target='_blank'
-                                        className='hover:scale-125 transition-all ease-in'>
-
-                                        <CustomImage
-                                            src={`/github.svg`}
-                                            width={26}
-                                            height={26}
-                                            alt='social media icon'
-                                        />
-
-                                    </Link>
-                                )}
-
-                                {/* preview */}
-                                {project?.preview && (
-                                    <Link
-                                        href={project.preview}
-                                        target='_blank'
-                                        className='hover:scale-125 transition-all ease-in'>
-
-                                        <CustomImage
-                                            src={`/preview.svg`}
-                                            width={26}
-                                            height={26}
-                                            alt='social media icon'
-                                        />
-
-                                    </Link>
-                                )}
-
-                            </div>
-                        </div>
+                        {/* project status */}
+                        <h4 className={`text-sm px-4 capitalize text-green-500 ${project.status === "🚀 New" ? 'animate-pulse' : 'hidden'}`}>
+                            {project.status}
+                        </h4>
 
                     </div>
+
+                    {/* project discreption */}
+                    <p className='p-4 text-zinc-300'>{project.description}</p>
+
+                    {/* project links */}
+                    <div className='flex justify-center gap-3'>
+
+                        {/* github link */}
+                        <Link
+                            href={project.github}
+                            target='_blank'
+                            className='w-[10rem] py-2 text-white text-xl bg-[#24cfa6] rounded flex justify-center items-center gap-2 hover:bg-[#24cfa7e4] transition-all duration-200'>
+                            <BsGithub />
+                            Github
+                        </Link>
+
+                        {/* preview link */}
+                        <Link
+                            href={project.preview}
+                            target='_blank'
+                            className='w-[10rem] py-2 text-white text-xl bg-[#24cfa6] rounded flex justify-center items-center gap-2 hover:bg-[#24cfa7e4] transition-all duration-200'>
+                            <HiOutlineExternalLink />
+                            Preview
+                        </Link>
+
+                    </div>
+
                 </div>
+
             ))}
+
         </section>
     );
 }
