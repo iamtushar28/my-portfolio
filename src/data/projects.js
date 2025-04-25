@@ -5,10 +5,10 @@ export const projects = [
     description:
       "A full-featured LinkedIn redesign built with Next.js, offering modern UI, real-time updates, responsive design, user authentication, posting, networking, and messaging functionalities.",
     date: "april 2025",
-    status: "🚀 Upcoming",
+    status: "🚀 New",
     alt: "linkeding redesigned",
-    preview: "#",
-    github: "#",
+    preview: "https://linkedin28.vercel.app/",
+    github: "https://github.com/iamtushar28/linkedin",
   },
   {
     title: "Travel website 🧳",
