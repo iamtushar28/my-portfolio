@@ -9,7 +9,7 @@ import { LuCalendar } from "react-icons/lu"; //calender icon
 export default function Desktop() {
 
     return (
-        <section className='flex flex-wrap justify-between gap-4 lg:gap-6 mt-6'>
+        <section className='flex flex-wrap md:justify-center lg:justify-between gap-8 lg:gap-6 mt-6'>
 
             {projects.map((project, index) => (
 
@@ -28,18 +28,20 @@ export default function Desktop() {
                     {/* project title */}
                     <h2 className='text-4xl px-4 pt-4'>{project.title}</h2>
 
-                    <div className='flex justify-between items-center'>
+                    <div className='flex justify-between mt-2 items-center'>
 
-                    {/* published date */}
+                        {/* published date */}
                         <div className='px-4 flex items-center gap-2 mt-2 text-zinc-200'>
                             <LuCalendar />
                             <h4 className='capitalize'>{project.date}</h4>
                         </div>
 
                         {/* project status */}
-                        <h4 className={`text-sm px-4 capitalize text-green-500 ${project.status === "🚀 New" ? 'animate-pulse' : 'hidden'}`}>
-                            {project.status}
-                        </h4>
+                        {project.status && (
+                            <h4 className={`text-sm px-4 capitalize text-green-500 animate-pulse`}>
+                                {project.status}
+                            </h4>
+                        )}
 
                     </div>
 
