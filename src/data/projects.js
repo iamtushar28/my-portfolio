@@ -1,11 +1,21 @@
 export const projects = [
   {
+    title: "Blog platform 📑",
+    src: `/dev.png`,
+    description:
+      "Inspired by Dev.to, this sleek blog platform has social logins, responsive layout, fast performance, and is evolving into a full-stack scalable content management app.",
+    date: "feb 2025",
+    status : "🚀 Full Stack",
+    alt: "dev blog",
+    preview: "https://dev-iota-one.vercel.app/",
+    github: "https://github.com/iamtushar28/dev",
+  },
+  {
     title: "Linkedin redesign",
     src: `/linkedin.png`,
     description:
-      "A full-featured LinkedIn redesign built with Next.js, offering modern UI, real-time updates, responsive design, user authentication, posting, networking, and messaging functionalities.",
+      "A modern LinkedIn redesign focused on frontend design, built with Next.js, featuring a sleek UI, responsive layouts, smooth navigation, and an intuitive user experience.",
     date: "april 2025",
-    status: "🚀 New",
     alt: "linkeding redesigned",
     preview: "https://linkedin28.vercel.app/",
     github: "https://github.com/iamtushar28/linkedin",
@@ -19,16 +29,6 @@ export const projects = [
     alt: "dev blog",
     preview: "https://travelo28.vercel.app/",
     github: "https://github.com/iamtushar28/travelo",
-  },
-  {
-    title: "Blog platform 📑",
-    src: `/dev.png`,
-    description:
-      "Inspired by Dev.to, this sleek blog platform has social logins, responsive layout, fast performance, and is evolving into a full-stack scalable content management app.",
-    date: "feb 2025",
-    alt: "dev blog",
-    preview: "https://dev-iota-one.vercel.app/",
-    github: "https://github.com/iamtushar28/dev",
   },
   {
     title: "Hostel Booking 🤳",
