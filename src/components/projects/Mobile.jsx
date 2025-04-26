@@ -99,8 +99,8 @@ export default function Mobile() {
                 </p>
 
                 {/* project status */}
-                <h4 className={`text-sm capitalize text-green-500 ${project.status === "🚀 New" ? 'animate-pulse' : 'hidden'}`}>
-                  {project.status}
+                <h4 className={`text-sm capitalize text-green-500 animate-pulse`}>
+                  {project?.status}
                 </h4>
                 
               </div>
