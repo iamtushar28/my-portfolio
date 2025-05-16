@@ -11,16 +11,6 @@ export const projects = [
     github: "https://github.com/iamtushar28/dev",
   },
   {
-    title: "Linkedin redesign",
-    src: `/linkedin.png`,
-    description:
-      "A modern LinkedIn redesign focused on frontend design, built with Next.js, featuring a sleek UI, responsive layouts, smooth navigation, and an intuitive user experience.",
-    date: "april 2025",
-    alt: "linkeding redesigned",
-    preview: "https://linkedin28.vercel.app/",
-    github: "https://github.com/iamtushar28/linkedin",
-  },
-  {
     title: "Travel website 🧳",
     src: `/travelo.png`,
     description:
@@ -31,16 +21,6 @@ export const projects = [
     github: "https://github.com/iamtushar28/travelo",
   },
   {
-    title: "Hostel Booking 🤳",
-    src: `/bookme.png`,
-    description:
-      "A simple web platform built to help students find or list hostel rooms easily. It simplifies the rental process with a user-focused, searchable accommodation directory.",
-    date: "oct 2024",
-    alt: "hostelbooking",
-    preview: "https://hostelweb-reactjs.netlify.app/",
-    github: "https://github.com/iamtushar28/roomBook-php",
-  },
-  {
     title: "Cyber Shop 🛍️",
     src: `/cybershop.png`,
     description:
@@ -49,6 +29,26 @@ export const projects = [
     alt: "cybershop",
     preview: "https://mobileshop-reactjs.netlify.app/",
     github: "https://github.com/iamtushar28/mobileShop-reactjs",
+  },
+  {
+    title: "Linkedin redesign",
+    src: `/linkedin.png`,
+    description:
+      "A modern LinkedIn redesign focused on frontend design, built with Next.js, featuring a sleek UI, responsive layouts, smooth navigation, and an intuitive user experience.",
+    date: "april 2025",
+    alt: "linkeding redesigned",
+    preview: "https://linkedin28.vercel.app/",
+    github: "https://github.com/iamtushar28/linkedin",
+  },
+  {
+    title: "Hostel Booking 🤳",
+    src: `/bookme.png`,
+    description:
+      "A simple web platform built to help students find or list hostel rooms easily. It simplifies the rental process with a user-focused, searchable accommodation directory.",
+    date: "oct 2024",
+    alt: "hostelbooking",
+    preview: "https://hostelweb-reactjs.netlify.app/",
+    github: "https://github.com/iamtushar28/roomBook-php",
   },
   {
     title: "ELBRIT Frontend 💊",
